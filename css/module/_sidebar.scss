@@ -1,0 +1,60 @@
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    a {
+        display: block;
+        padding: 0.6em 0;
+        transition: 0.3s;
+        width: 50%;
+        border: solid 1px transparent;
+        padding-left: 10px;
+
+
+        &.active,
+        &:hover {
+            color: #000000;
+            border: 1px solid #DBDBDB;
+            background-color: #ffffff;
+            border-radius: 30px;
+            font-weight: bold;
+
+            &:hover::before,
+            &:hover::before {
+                opacity: 1;
+            }
+        }
+    }
+
+}
+
+.sidebar a::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 20px;
+    opacity: 0.67;
+    transition: opacity 0.3s;
+    background: url(../../img/home.svg) center center / contain no-repeat;
+}
+
+.sidebar .sidebar-events::before {
+    background: url(../../img/calendar.svg) center center / contain no-repeat;
+}
+
+.sidebar .sidebar-group::before {
+    background: url(../../img/group.svg) center center / contain no-repeat;
+}
+
+.sidebar .sidebar-messages::before {
+    background: url(../../img/messages.svg) center center / contain no-repeat;
+}
+
+.sidebar .sidebar-amis::before {
+    background: url(../../img/group.svg) center center / contain no-repeat;
+}
+

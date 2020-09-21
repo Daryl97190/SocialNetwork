@@ -1,0 +1,49 @@
+@media only screen and (min-width : 950px) {
+    .site {
+
+        display: flex;
+    }
+    .profile {
+        display: block;
+    }
+    .sidebar {
+        display: block;
+        flex : none;
+        width: 180px;
+        a {
+            width: 100%;
+        }
+    }
+    .aside {
+        flex : none;
+        width: 310px;
+    }
+    .main {
+        width: 100%;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+}
+
+@media only screen and (min-width : 609px) {
+    .topbar {
+
+        nav {
+            padding: 0;
+
+            a {
+                margin: 0 20px;
+            }
+        }
+    }
+    .topbar .container {
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+
+    }
+
+}

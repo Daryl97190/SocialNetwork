@@ -1,0 +1,32 @@
+// Mobile first
+
+.topbar {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+
+    nav {
+        text-align: center;
+        padding-bottom: 16px;
+        line-height: 2;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 10px;
+        color: rgba(255, 255, 255, 0.67);
+        transition: color 0.3s;
+
+        &:hover, &.active {
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+.topbar-logo {
+    font-size: 1.5rem;
+    line-height: 54px;
+    text-align: center;
+    display: block;
+    padding: 11px 0;
+}
